@@ -7,7 +7,13 @@
     "regression": "npx playwright test",
     "webTests": "npx playwright test --grep @Web",
     "APITests": "npx playwright test --grep @API",
-    "SafariNewConfig": "npx playwright test --config playwright.config1.js --project=safari"
+    "SafariNewConfig": "npx playwright test --config playwright.config1.js --project=safari",
+    "exercises:list": "node exercises/utils/cli.js list",
+    "exercises:validate": "node exercises/utils/cli.js validate",
+    "exercises:progress": "node exercises/utils/cli.js progress",
+    "exercises:stats": "node exercises/utils/cli.js stats",
+    "exercises:example": "node exercises/utils/example-usage.js",
+    "test:property": "npx playwright test tests/property --grep @Property"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +22,7 @@
     "@cucumber/cucumber": "*",
     "@playwright/test": "^1.40",
     "allure-playwright": "^2.0.0-beta.15",
+    "fast-check": "^4.5.3",
     "typescript": "^5.4.5"
   },
   "dependencies": {
